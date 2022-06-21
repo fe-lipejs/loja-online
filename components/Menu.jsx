@@ -13,7 +13,7 @@ function Menu() {
                         width={30}
                         alt="Logo"
                     />
-                    <div className={styles.menuName}>Menu</div>
+                    <div className={styles.menuName}></div>
                  </div>
                 
                 <div className={styles.logo}> 
