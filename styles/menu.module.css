@@ -1,0 +1,33 @@
+    .menu {
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .menuName {
+        display: inline-flex;
+        margin-top: 0px;
+    }
+    
+    .elementosFinal {
+        display: flex;
+        justify-content: center;
+        margin-top: 6px;
+        padding: 0;
+    }
+    
+    .elementos {
+        margin-top: 13px;
+        padding: 0px 4px;
+        cursor: pointer;
+    }
+    
+    .logo {
+        margin-top: 10px;
+    }
+    
+    .paraDireita {}

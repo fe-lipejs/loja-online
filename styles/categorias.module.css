@@ -1,0 +1,13 @@
+.content {
+    display: flex;
+    justify-content: left;
+    margin-top: 60px;
+}
+
+.cont {
+    background-color: rgb(236, 233, 233);
+    padding: 5px;
+    color: rgb(61, 61, 61);
+    font-size: 14px;
+    margin-left: 10px;
+}
