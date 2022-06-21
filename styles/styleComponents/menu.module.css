@@ -30,7 +30,7 @@
     .logo {
         filter: invert(4);
         margin-top: 10px;
-        margin-left: 25px;
+        margin-left: 0px;
         cursor: pointer;
     }
     
