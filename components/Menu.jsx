@@ -1,5 +1,6 @@
-import styles from '../styles/menu.module.css';
+import styles from '../styles/styleComponents/menu.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Menu() {
 
@@ -15,7 +16,7 @@ function Menu() {
                     />
                     <div className={styles.menuName}></div>
                  </div>
-                
+                <Link href="/">
                 <div className={styles.logo}> 
                     <Image
                         src="/logo/logo.png"
@@ -24,6 +25,7 @@ function Menu() {
                         alt="Logo"
                     />
                 </div>
+                </Link>
                 <div className={styles.elementosFinal}>
                     <div className={styles.elementos + ' ' + styles.paraDireita}>
                         <Image

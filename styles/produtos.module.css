@@ -1,26 +1,35 @@
-.content {
-    margin-top: 60px;
-    padding: 10px;
-    margin-left: 30px
+.contentProduto {
+    display: grid;
+    justify-content: center;
 }
 
-.cont {
-    background-color: rgb(236, 233, 233);
-    height: 45vh;
-    width: 35vh;
+.contProduto {}
+
+.imagemProduto {
+    background-color: rgb(230, 230, 230);
+    height: 60vh;
+    width: 50vh;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 12px;
+    justify-content: center;
 }
 
-.nome,
-.preco {
-    text-align: center;
-    margin-top: 10px;
-    width: 35vh;
+.nomeProduto {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
-.nome {
-    color: rgb(92, 91, 91);
+.precoProduto {
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 10px;
+    text-decoration: line-through 1.9px grey;
+    color: grey;
 }
 
-.preco {
+.precoPromProduto {
+    font-size: 25px;
     font-weight: 700;
 }

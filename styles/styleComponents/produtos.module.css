@@ -1,0 +1,25 @@
+.content {
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.cont {
+    background-color: rgb(236, 236, 236);
+    height: 45vh;
+    width: 35vh;
+}
+
+.nome,
+.preco {
+    text-align: center;
+    margin-top: 10px;
+    width: 35vh;
+}
+
+.nome {
+    color: rgb(92, 91, 91);
+}
+
+.preco {
+    font-weight: 700;
+}

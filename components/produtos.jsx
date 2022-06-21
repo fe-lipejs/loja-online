@@ -1,4 +1,4 @@
-import style from '../styles/produtos.module.css'
+import style from '../styles/styleComponents/produtos.module.css'
 
 function Categoria () {
     return(
