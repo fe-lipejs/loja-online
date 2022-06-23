@@ -1,6 +1,7 @@
 .content {
     margin-top: 60px;
-    padding: 10px;
+    flex: 0 0 5;
+    margin: 60px;
 }
 
 .cont {
@@ -8,6 +9,8 @@
     height: 45vh;
     width: 35vh;
 }
+
+.produto {}
 
 .nome,
 .preco {

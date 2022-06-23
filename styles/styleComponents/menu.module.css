@@ -27,8 +27,20 @@
         cursor: pointer;
     }
     
-    .logo {
+    .hamMenu {
         filter: invert(4);
+        margin-top: 13px;
+        cursor: pointer;
+    }
+    
+    .hamMenu:active {
+        filter: invert(0.8);
+        transition: ease-in-out 200ms;
+        transform: rotate(90deg);
+    }
+    
+    .logo {
+        filter: invert(1);
         margin-top: 10px;
         margin-left: 0px;
         cursor: pointer;

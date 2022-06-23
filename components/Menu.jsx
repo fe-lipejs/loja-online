@@ -15,7 +15,7 @@ export function Menu() {
 
             <MenuLateral activ={active} setActiv={setActive}></MenuLateral>
             <div className={styles.menu}>
-                <div className={styles.elementos}
+                <div className={styles.hamMenu}
                     onClick={() => setActive(!active)}
                 >
                     {console.log("MENU: " + active)}

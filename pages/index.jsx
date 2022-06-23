@@ -11,16 +11,14 @@ function Index() {
             <h3>IMPORTADOS, EXCLUSIVOS e PRESTAÇÃO</h3>
             <Categoria />
             <div className={Style.produtos}>
-                <Link href="/produtos">
-                    <a>
+
                     <Produtos />
                     <Produtos />
                     <Produtos />
                     <Produtos />
                     <Produtos />
                     <Produtos />
-                    </a>
-                </Link>
+                    
             </div>
         </>
     )
