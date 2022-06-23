@@ -1,13 +1,24 @@
 import styles from '../styles/styleComponents/menu.module.css';
+import MenuLateral from '../components/MenuLateral';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
-function Menu() {
+
+export function Menu() {
+
+
+    const [active, setActive] = useState(false);
 
     return (
         <>
+
+            <MenuLateral activ={active} setActiv={setActive}></MenuLateral>
             <div className={styles.menu}>
-                <div className={styles.elementos}>
+                <div className={styles.elementos}
+                    onClick={() => setActive(!active)}
+                >
+                    {console.log("MENU: " + active)}
                     <Image
                         src="/logo/ham.svg"
                         height={30}
@@ -15,16 +26,16 @@ function Menu() {
                         alt="Logo"
                     />
                     <div className={styles.menuName}></div>
-                 </div>
-                <Link href="/">
-                <div className={styles.logo}> 
-                    <Image
-                        src="/logo/logo.png"
-                        height={40}
-                        width={50}
-                        alt="Logo"
-                    />
                 </div>
+                <Link href="/">
+                    <div className={styles.logo}>
+                        <Image
+                            src="/logo/logo.png"
+                            height={40}
+                            width={50}
+                            alt="Logo"
+                        />
+                    </div>
                 </Link>
                 <div className={styles.elementosFinal}>
                     <div className={styles.elementos + ' ' + styles.paraDireita}>
@@ -44,7 +55,7 @@ function Menu() {
                         />
                     </div>
                     <div className={styles.elementos + ' ' + styles.paraDireita}>
-                       {/*   <Image
+                        {/*   <Image
                             src="/logo/login.svg"
                             height={20}
                             width={20}
@@ -53,8 +64,8 @@ function Menu() {
                     </div>
                 </div>
             </div>
-            </>
-            )
+        </>
+    )
 }
 
-            export default Menu
+export default Menu

@@ -1,0 +1,60 @@
+    .content {
+        padding: 12px;
+        background-color: #212727;
+        width: 40vh;
+        height: 100%;
+        position: absolute;
+        transform: translateX(0%);
+        transition: ease-in-out 400ms;
+        z-index: 10;
+    }
+    
+    .contentOff {
+        padding: 12px;
+        background-color: #232B2B;
+        width: 40vh;
+        height: 100%;
+        position: absolute;
+        transform: translateX(-100%);
+        transition: ease-in-out 400ms;
+        z-index: 10;
+    }
+    
+    .cont {
+        color: #eee;
+        font-size: 18px;
+    }
+    
+    .element {
+        margin-bottom: 30px;
+        text-align: start;
+    }
+    
+    .hamClose {
+        filter: invert(5);
+        margin-top: 12.5px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    
+    .blur {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, 0.082);
+        transition: ease-in-out 400ms;
+    }
+    
+    .blurOff {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, 0.082);
+        transition: ease-in-out 400ms;
+    }
