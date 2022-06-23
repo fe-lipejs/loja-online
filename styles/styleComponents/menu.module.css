@@ -1,7 +1,7 @@
     .menu {
         width: 100%;
         height: 80px;
-        background: linear-gradient(90deg, rgb(74, 22, 170), rgba(115, 23, 201, 0.925));
+        background: linear-gradient(90deg, rgb(98, 71, 219), rgba(115, 23, 201, 0.925));
         font-size: 18px;
         font-weight: 400;
         display: flex;
