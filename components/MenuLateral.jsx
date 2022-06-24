@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import style from "../styles/styleComponents/menuLateral.module.css";
 import { AppContext } from '../components/Menu';
 import Image from 'next/image';
+import Link from "next/link";
 
 
 
@@ -27,20 +28,30 @@ export default function MenuLateral({ activ, setActiv }) {
             <div className={activ ? style.content : style.contentOff}>
                 <div className={style.cont}>
                     <div className={style.hamClose}>
-                            <Image
-                                onClick={() => setActiv(!activ)}
-                                src="/logo/ham.svg"
-                                height={30}
-                                width={30}
-                                alt="Logo"
-                            />
+                        <Image
+                            onClick={() => setActiv(!activ)}
+                            src="/logo/ham.svg"
+                            height={30}
+                            width={30}
+                            alt="Logo"
+                        />
                     </div>
-                    <div className={style.element}>INICIO</div>
+                    <Link href="/">
+                        <a>  <div className={style.element}>INICIO</div>  </a>
+                    </Link>
                     <hr></hr>
-                    <div className={style.element}>MASCULINO</div>
-                    <div className={style.element}>ACESSÓRIOS</div>
-                    <div className={style.element}>LOGIN</div>
-                    <div className={style.element}>CONTATO</div>
+                    <Link href="/produtos">
+                        <a>
+                            <div className={style.element}>MASCULINO</div>
+                            <div className={style.element}>ACESSÓRIOS</div>
+                        </a>
+                    </Link>
+                    <Link href="/login">
+                        <a> <div className={style.element}>LOGIN</div>  </a>
+                    </Link>
+                    <Link href="/contato">
+                        <a> <div className={style.element}>CONTATO</div>  </a>
+                    </Link>
                 </div>
             </div>
             <div

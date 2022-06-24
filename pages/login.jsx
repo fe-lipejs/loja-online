@@ -2,6 +2,10 @@ import style from '../styles/login.module.css'
 import Menu from '../components/Menu'
 
 export default function Login (params) {
+    const submitLogin = async (event) => {
+        event.preventDefault()
+        console.log(event.target)
+    }
     return(
         <>
         <Menu/>
@@ -16,8 +20,9 @@ export default function Login (params) {
                     className={style.email} 
                 />
                 <label htmlFor="senha">Senha</label>
+                <br />
                 <input 
-                    type="text"
+                    type="password"
                     autoComplete='senha'
                     name='senha'
                     className={style.senha} 
