@@ -1,0 +1,58 @@
+.content {
+    padding: 15vh;
+    display: grid;
+    justify-content: center;
+    box-shadow: 1px 1px black;
+}
+
+.cont {
+    width: 70vh;
+    padding: 30px;
+    padding-inline: 30px;
+    background-color: transparent/* #3031321c */
+    ;
+    box-shadow: 1px 1px 10px rgb(138, 135, 135);
+}
+
+.titulo {
+    font-size: 40px;
+    width: 70%;
+    font-weight: 700;
+    color: rgb(71, 71, 71);
+    margin-bottom: 40px;
+}
+
+.emailLb,
+.senhaLb {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(71, 71, 71);
+}
+
+.email,
+.senha {
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid rgba(128, 128, 128, 0.384);
+    /*     box-shadow: 2px 2px #30313234;
+ */
+}
+
+.submit {
+    /*  background-color: #303132; */
+    border-radius: 4px;
+    background: linear-gradient(90deg, #7317c9ec, #6348db);
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+}

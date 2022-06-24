@@ -9,24 +9,12 @@ import Link from "next/link";
 export default function MenuLateral({ activ, setActiv }) {
     console.log(setActiv)
 
-
-    /* let [activ, setActiv] = useState(active.props)
-
-    useEffect(() => {
-        setActiv(active.props)
-        console.log("MENU LATERAL: " + activ)
-    })
-
-    function handleClick() {
-        const a = () => setActiv(!active.props)
-        console.log("OIAA " + active)
-        return active
-    }
-     */return (
+    return (
         <>
 
             <div className={activ ? style.content : style.contentOff}>
-                <div className={style.cont}>
+                <div onClick={() => setActiv(!activ)}
+                    className={style.cont}>
                     <div className={style.hamClose}>
                         <Image
                             onClick={() => setActiv(!activ)}
